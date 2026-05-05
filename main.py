@@ -1,6 +1,4 @@
-import client
-import server
-import syncing
+from src import client, server, syncing, node
 
 if __name__ == "__main__":
     print("\nSistema de Sincronização de Relógios\n")

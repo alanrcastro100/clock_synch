@@ -2,7 +2,7 @@
 
 ### **Para rodar o sistema:**
 
-#### 1. **Instalar e iniciar o Venv:**
+#### 1. **Instalar o venv:**
    Instalar:
 
    ```bash
@@ -25,5 +25,5 @@
 
 ### 3. **Executar o sistema**
    ```bash
-   python __main__.py
+   python main.py
    ```

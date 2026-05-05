@@ -1,4 +1,4 @@
-from node import Node
+from .node import Node
 
 class Server(Node):
     def __init__(self, name):
