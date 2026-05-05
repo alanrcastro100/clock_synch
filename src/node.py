@@ -9,6 +9,21 @@ class Node:
 
         self.create()
 
+    # @property
+    # def updt_local_clock(self):
+    #     return self.local_clock
+    
+    # @updt_local_clock.setter
+    # def updt_local_clock(self, updt_value):
+    #     value = updt_value
+    #     self.value_update(value)
+
+    # def value_update(self, value):
+    #     if  value %1 > 0.6:
+    #         value = value + 0.40
+    #     else:
+    #        pass
+    
     def get_input(self, prompt):
         while True:
             try:
