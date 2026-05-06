@@ -48,6 +48,9 @@ class ClockSynchronizer:
 
         print(text_line)
         print(Fore.LIGHTYELLOW_EX + "Primeiro a enviar: " + Fore.CYAN + clients[0].name + "\n"
-              + Fore.LIGHTYELLOW_EX + "Segundo a enviar: " + Fore.CYAN + clients[1].name + "\n"
-              + Fore.LIGHTYELLOW_EX + "Terceiro a enviar: " + Fore.CYAN + clients[2].name)
+              + Style.RESET_ALL + f" ---> (Hora de envio: {clients[0].sent_time + self.clock_adjust(clients[0].local_clock):.2f})")
+        print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + "Segundo a enviar: " + Fore.CYAN + clients[1].name + "\n"
+              + Style.RESET_ALL + f" ---> (Hora de envio: {clients[1].sent_time + self.clock_adjust(clients[1].local_clock):.2f})")
+        print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + "Terceiro a enviar: " + Fore.CYAN + clients[2].name + "\n"
+              + Style.RESET_ALL + f" ---> (Hora de envio: {clients[2].sent_time + self.clock_adjust(clients[2].local_clock):.2f})")
         print(text_line)
