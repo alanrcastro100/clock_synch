@@ -1,6 +1,5 @@
 from colorama import Fore, Style
 
-
 class Node:
     def __init__(self, name):
         self.name = name
@@ -20,5 +19,13 @@ class Node:
     def create(self):
         print(f"Criando '{self.name}'")
         self.local_clock = self.get_input("Digite a hora: ")
+        self.fix_clock()
         self.sent_time = self.get_input("Digite a hora de envio: ")
+    
         print("Dados salvos!\n")
+
+    def fix_clock(self):
+        if self.local_clock > 24:
+            self.local_clock = self.local_clock - 24
+        elif self.local_clock < 0:
+            self.local_clock = abs(self.local_clock)

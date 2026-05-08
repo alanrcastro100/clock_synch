@@ -7,4 +7,5 @@ class Server(Node):
     def create(self):
         print(f"Criando Servidor '{self.name}'")
         self.local_clock = self.get_input("Digite a hora do servidor: ")
+        self.fix_clock()
         print("Servidor configurado!\n")
